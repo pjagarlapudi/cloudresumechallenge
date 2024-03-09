@@ -26,4 +26,27 @@ Organization:
       OrganizationalUnitName: sandbox
       Accounts: !Ref ManagementAccount
 
+  ProductionOU:
+    Type: OC::ORG::OrganizationalUnit
+    Properties:
+      OrganizationalUnitName: production
+      Accounts: !Ref pjprod
+  
+  DevelopmentOU:
+    Type: OC::ORG::OrganizationalUnit
+    Properties:
+      OrganizationalUnitName: development
+      Accounts:
+        - !Ref pjdev
+  pjdev:
+   Type: OC::ORG::Account
+   Properties:
+    AccountName: My New Developmemt Account
+    RootEmail: pratyushaj2019+devl@gmail.com
+    
+  pjprod:
+   Type: OC::ORG::Account
+   Properties:
+    AccountName: My New Production Account
+    RootEmail: pratyushaj2019+prodc@gmail.com
 
