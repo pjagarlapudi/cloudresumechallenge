@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: '2010-09-09-OC'
+Description: default template generated for organization with master account 668527998546
+
+Organization:
+  ManagementAccount:
+    Type: OC::ORG::MasterAccount
+    Properties:
+      AccountName: devops
+      AccountId: '668527998546'
+      RootEmail: pratyushaj2019@gmail.com
+
+  OrganizationRoot:
+    Type: OC::ORG::OrganizationRoot
+    Properties:
+      DefaultOrganizationAccessRoleName: OrganizationAccountAccessRole
+
+  MyOrganizationOU:
+    Type: OC::ORG::OrganizationalUnit
+    Properties:
+      OrganizationalUnitName: MyOrganization
+      OrganizationalUnits: !Ref SandboxOU
+
+  SandboxOU:
+    Type: OC::ORG::OrganizationalUnit
+    Properties:
+      OrganizationalUnitName: sandbox
+      Accounts: !Ref ManagementAccount
+
+
