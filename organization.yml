@@ -14,18 +14,6 @@ Organization:
     Properties:
       DefaultOrganizationAccessRoleName: OrganizationAccountAccessRole
 
-  MyOrganizationOU:
-    Type: OC::ORG::OrganizationalUnit
-    Properties:
-      OrganizationalUnitName: MyOrganization
-      OrganizationalUnits: !Ref SandboxOU
-
-  SandboxOU:
-    Type: OC::ORG::OrganizationalUnit
-    Properties:
-      OrganizationalUnitName: sandbox
-      Accounts: !Ref ManagementAccount
-
   ProductionOU:
     Type: OC::ORG::OrganizationalUnit
     Properties:
@@ -43,10 +31,24 @@ Organization:
    Properties:
     AccountName: My New Developmemt Account
     RootEmail: pratyushaj2019+devl@gmail.com
+    Alias: pjdev
+    PasswordPolicy: !Ref PasswordPolicy
     
   pjprod:
    Type: OC::ORG::Account
    Properties:
     AccountName: My New Production Account
     RootEmail: pratyushaj2019+prodc@gmail.com
+    Alias: pjprod
+    PasswordPolicy: !Ref PasswordPolicy
+  
+  PasswordPolicy:
+   Type: OC::ORG::PasswordPolicy
+   Properties:
+    MinimumPasswordLength: 12
+    RequireLowercaseCharacters: true
+    RequireNumbers: true
+    RequireSymbols: true
+    RequireUppercaseCharacters: true
+    AllowUsersToChangePassword: true
 
