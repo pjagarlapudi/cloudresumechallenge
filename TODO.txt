@@ -1,1 +1,5 @@
 Change Dev and Prod account names
+Create account users
+Explore AWS Control Tower
+
+Goto step 4 -S3
