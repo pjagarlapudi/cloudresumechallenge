@@ -3,3 +3,50 @@ Create account users
 Explore AWS Control Tower
 
 Goto step 4 -S3
+Add download link for CV?
+Add links to projects
+Blog section
+projects section
+hobbies
+TODO READ DNS Stuff - links in the book. Pradeeps video
+
+
+What aspect of Chunk 1's work did you
+find the most difficult?
+learning and implementing CSS flexbox feature
+learning about DNS, CDN concepts
+refreshing html and css basics
+changing name of non root account :-)
+
+
+
+
+
+Note one or two problems you
+overcame to get the static site deployed;
+include the error messages or
+screenshots of the issues, and write
+down what you did to fix them.
+The website did not load. Had to create records in Route 53 to point to CloudFront resources
+
+
+
+What's something you'd have done
+differently, or added, if you'd had more
+79
+time?
+Styled the resume better. Would have tried CSS libs 
+Develop into a full-fleged website highlighting my portfolio projects
+Explore AWS Control Tower
+
+
+
+
+If you tried one of the mods, note what
+you did, and how it's an improvement
+over the basic challenge requirements.
+NO
+
+
+Had to change from poweruser to admin user to be able to create roles - ex: lambda role to access db
+(learning)CORS - setting the header in API gateway and lambda code and Javascript

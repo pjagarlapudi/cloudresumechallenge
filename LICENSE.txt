@@ -1,7 +1,7 @@
 The MIT License (MIT)
 
 Copyright (c) 2024 pjagarlapudi (https://codepen.io/pjagarlapudi/pen/ExJPddd)
-Fork of an original work CloudResume (https://codepen.io/pjagarlapudi/pen/ExJPddd)
+Fork of an original work Cloud Resume Challenge (https://codepen.io/pjagarlapudi/pen/ExJPddd)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
